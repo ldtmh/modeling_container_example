@@ -27,7 +27,7 @@ root@<container_id>:/app# jupyter notebook --ip 0.0.0.0 --no-browser --allow-roo
 
 ```
 
-You can then run the jupyter notebooks. When you are finished enter `\\wsl$\docker-desktop-data\data\docker\volumes` on Windows or `/var/lib/docker/volumes/` on macOS or other UNIX OS into your file explorer. Sort by date modified to find the latest folder and inside you will find `xgb_reg.pkl` inside the `_data` folder.
+You can then run the jupyter notebooks. Use the option which looks like `http://127.0.0.1:8888/<token>`. When you are finished enter `\\wsl$\docker-desktop-data\data\docker\volumes` on Windows or `/var/lib/docker/volumes/` on macOS or other UNIX OS into your file explorer. Sort by date modified to find the latest folder and inside you will find `xgb_reg.pkl` inside the `_data` folder.
 
 Now run the prod container and it will print the mean squared error of the model:
 
