@@ -21,7 +21,7 @@ Once that is completed you can run the dev environment container by
 
 ``` 
 
-> docker run -it -p 8888:8888 ldtm/modeling_demo:dev-0.0.1
+> docker run -it -p 8888:8888 <username>/modeling_demo:dev-0.0.1
 
 root@<container_id>:/app# jupyter notebook --ip 0.0.0.0 --no-browser --allow-root
 
@@ -33,7 +33,7 @@ Now run the prod container and it will print the mean squared error of the model
 
 ```
 
-docker run -v <path/to/xgb_reg.pkl>:/app/xgb_reg.pkl ldtm/modeling_demo:prod-0.0.1
+docker run -v <path/to/xgb_reg.pkl>:/app/xgb_reg.pkl <username>/modeling_demo:prod-0.0.1
 
 0.2401475171547707
 
